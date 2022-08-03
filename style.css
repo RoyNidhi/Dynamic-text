@@ -10,24 +10,30 @@
 
 p {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     text-align: center;
 }
 
-p::before,p::after {
+i {
+    color: #C10000;
+    margin-right: 6px;
+    padding-top: 3px;
+}
+
+p::before,
+p::after {
     background-color: #aaa;
     content: ' ';
     flex-grow: 1;
     height: 2px;
     position: relative;
-    top: 0.5em;
+    top: 0.6em;
 }
 
 p::before {
-    margin-right: 1em;
+    margin-right: 0.5em;
 }
 
 p::after {
-    margin-left: 1em;
+    margin-left: 0.5em
 }
