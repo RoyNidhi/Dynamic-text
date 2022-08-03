@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18px;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+p::before,p::after {
+    background-color: #aaa;
+    content: ' ';
+    flex-grow: 1;
+    height: 2px;
+    position: relative;
+    top: 0.5em;
+}
+
+p::before {
+    margin-right: 1em;
+}
+
+p::after {
+    margin-left: 1em;
+}
